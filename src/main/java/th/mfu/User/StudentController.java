@@ -24,6 +24,6 @@ public class StudentController {
     public List<Student> getStudens() {
         return studentSevice.getStudens();
 
-    } // โค้ดหากิน
+    }
 
 }
