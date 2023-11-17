@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+
+    </head>
+    <body>
+               List 
+               <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>BOARD_ID</th>
+                        <th>Header Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="topic : ${topics}">
+                        <td th:text="${topic.id}">ID</td>
+                        <td th:text="${topic.boardid}">ID</td>
+                        <td th:text="${topic.headerTopic}">Header Topic</td>
+                        <td>
+                            <!-- Edit Page -->
+                           <button> Edit
+                           </button> 
+                           <!-- Delete Page-->
+                           <button> Delete 
+                           </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </form>
+        <button><a th:href="@{/topic/new}">Back To add</a></button> 
+</body>
+</html>
