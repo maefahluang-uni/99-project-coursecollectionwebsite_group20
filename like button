@@ -1,0 +1,168 @@
+
+<head>
+    <!--  เชื่อมกับ bootstrap 5 แบบออนไลน์ จำเป็นต้องใส่เพื่อให้ใช้ Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="/Css/css.css">
+    
+    <!--  เชื่อมกับ bootstrap 5 แบบออนไลน์ จำเป็นต้องใส่เพื่อให้ใช้ Bootstrap5-->
+</head>
+
+<body>
+    <!-- ส่วนข้างบน  ===========================================================================-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="IMAGE/.png" alt="" width="70" height="30"> <!-- Logo แก้ตรงนี้-->
+        </a>
+            <form class="d-flex">x
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Course
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="/UIUX">UX/UI</a></li>
+                      <li><a class="dropdown-item" href="/่Java s">Java Script</a></li>
+                      <li><a class="dropdown-item" href="/Cชาบ">C#</a></li>
+                      <li><a class="dropdown-item" href="/C++">C++</a></li>
+                      <li><a class="dropdown-item" href="/My SQL">My SQL</a></li>
+                      <li><a class="dropdown-item" href="/Python">Python</a></li>
+                      <li><a class="dropdown-item" href="/HTML">HTML</a></li>
+                      <li><a class="dropdown-item" href="/Data sci">Data Science</a></li>
+                      <li><a class="dropdown-item" href="/CS">CSS</a></li>
+                      <li><a class="dropdown-item" href="/HTTP">HTTP</a></li>
+                      <li><a class="dropdown-item" href="/Java">Java Course</a></li>
+                      <li><a class="dropdown-item" href="/C C">C Course</a></li>
+                    </ul>
+                  </div>
+                <input class="form-control sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button> 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary" type="button">Login</button>
+                    <a class="btn btn-primary" href="/ลองปุ่มเปลี่ยนสี เก็บ" role="button">Favorite</a>
+                  </div>
+                
+            </form>
+        </div>
+
+<!-- course.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .course-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      white-space: pre-wrap;
+    }
+
+    button {
+      background-color: #28a745;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    button.favorite-button {
+      background-color: #ffc107;
+      color: #212529;
+    }
+
+    button.favorite-button:hover {
+      background-color: #d39e00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Course content -->
+  <div class="course-container">
+    <div class="p-2 bd-highlight"> <!-- box-->
+        <div class="card" style="width: 18rem;"> <!-- First colum -->
+            <img src="/img/slide1.png" class="card-img-top" alt="..."> <!-- Pic-->
+            <div class="card-body"> <!--Card -->
+                <h5 class="card-title">Course</h5> <!-- Tital  ข้อควาวมข้างบนของการ์ด-->
+                <p class="card-text">เนื้อหาต่างๆ </p> <!-- เนื้อหาข้างใน  -->
+                <a href="#" class="btn btn-primary">ปุ่ม</a> <!--  ปุ่ม  -->
+    
+    <!-- Add the favorite button with an onclick event -->
+    <button id="likeButton" class="favorite-button" onclick="toggleFavorite('Introduction to Web Development')">Like</button>
+
+
+    
+    <!-- Add the favorite button with an onclick event -->
+
+  </div>
+
+
+  <!-- You can add more course containers with different content -->
+
+
+
+
+  <!-- JavaScript to handle adding to favorites -->
+  <script>
+    // Function to toggle a course as a favorite in localStorage
+    function toggleFavorite(courseTitle) {
+      var likeButton = document.getElementById('likeButton');
+      var favoriteData = JSON.parse(localStorage.getItem('favoriteData')) || [];
+
+      // Check if the course is already in favorites
+      var existingCourseIndex = favoriteData.findIndex(function (item) {
+        return item.courseTitle === courseTitle;
+      });
+
+      if (existingCourseIndex === -1) {
+        // If not, add it to favorites
+        favoriteData.push({
+          courseTitle: courseTitle,
+          timestamp: new Date().toLocaleString()
+        });
+        alert('Course added to favorites!');
+        likeButton.style.backgroundColor = '#d39e00'; // Change color to liked state
+      } else {
+        // If already in favorites, remove it
+        favoriteData.splice(existingCourseIndex, 1);
+        alert('Course removed from favorites!');
+        likeButton.style.backgroundColor = '#ffc107'; // Change color to unliked state
+      }
+
+      // Update localStorage
+      localStorage.setItem('favoriteData', JSON.stringify(favoriteData));
+    }
+
+    // Function to go to the favorites page
+    function goToFavoritePage() {
+      // Redirect to the favorites page
+      window.location.href = 'ลองปุ่มเปลี่ยนสี เก็บ';
+    }
+  </script>
+</body>
+</html>
