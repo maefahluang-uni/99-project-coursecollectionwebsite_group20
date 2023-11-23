@@ -18,25 +18,25 @@
             <a class="navbar-brand"><img src="IMAGE/.png" alt="" width="70" height="30"> <!-- Logo แก้ตรงนี้-->
         </a>
             <form class="d-flex">x
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Course
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="/UIUX">UX/UI</a></li>
-                      <li><a class="dropdown-item" href="/่Java s">Java Script</a></li>
-                      <li><a class="dropdown-item" href="/Cชาบ">C#</a></li>
-                      <li><a class="dropdown-item" href="/C++">C++</a></li>
-                      <li><a class="dropdown-item" href="/My SQL">My SQL</a></li>
-                      <li><a class="dropdown-item" href="/Python">Python</a></li>
-                      <li><a class="dropdown-item" href="/HTML">HTML</a></li>
-                      <li><a class="dropdown-item" href="/Data sci">Data Science</a></li>
-                      <li><a class="dropdown-item" href="/CS">CSS</a></li>
-                      <li><a class="dropdown-item" href="/HTTP">HTTP</a></li>
-                      <li><a class="dropdown-item" href="/Java">Java Course</a></li>
-                      <li><a class="dropdown-item" href="/C C">C Course</a></li>
-                    </ul>
-                  </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Course
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="/UIUX">UX/UI</a></li>
+                        <li><a class="dropdown-item" href="/่Java s">Java Script</a></li>
+                        <li><a class="dropdown-item" href="/Cชาบ">C#</a></li>
+                        <li><a class="dropdown-item" href="/C++">C++</a></li>
+                        <li><a class="dropdown-item" href="/My SQL">My SQL</a></li>
+                        <li><a class="dropdown-item" href="/Python">Python</a></li>
+                        <li><a class="dropdown-item" href="/HTML">HTML</a></li>
+                        <li><a class="dropdown-item" href="/Data sci">Data Science</a></li>
+                        <li><a class="dropdown-item" href="/CS">CSS</a></li>
+                        <li><a class="dropdown-item" href="/HTTP">HTTP</a></li>
+                        <li><a class="dropdown-item" href="/Java">Java Course</a></li>
+                        <li><a class="dropdown-item" href="/C C">C Course</a></li>
+                      </ul>
+                    </div>
                 <input class="form-control sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button> 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -161,7 +161,7 @@
     // Function to go to the favorites page
     function goToFavoritePage() {
       // Redirect to the favorites page
-      window.location.href = 'ลองปุ่มเปลี่ยนสี เก็บ';
+      window.location.href = 'like buttonn.html';
     }
   </script>
 </body>

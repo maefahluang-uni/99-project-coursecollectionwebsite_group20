@@ -1,127 +1,127 @@
-<!-- favorite.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favorite Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .favorite-container {
-      background-color: #ffffff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      color: #007bff;
-    }
-
-    pre {
-      white-space: pre-wrap;
-    }
-
-    button {
-      background-color: #dc3545;
-      color: #ffffff;
-      border: none;
-      padding: 10px 15px;
-      font-size: 10px;
-      cursor: pointer;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-
-    button:hover {
-      background-color: #c82333;
-    }
-
-    .favorite-item {
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Display the stored data from localStorage -->
-  <div class="favorite-container">
-    <h2>Favorite Courses:</h2>
-    <div id="favoriteOutput"></div>
-  </div>
-
-  <!-- Optional: Add a button to delete all stored data -->
-  <button onclick="deleteAllFavorites()">Delete All Favorites</button>
-
-  <!-- Optional: Add a button to go back to the main page -->
-  <button onclick="goBack()">Go Back</button>
-
-  <!-- JavaScript to retrieve and display the stored data -->
-  <script>
-    // Function to retrieve and display stored data from localStorage
-    function displayFavoriteData() {
-      var favoriteOutputElement = document.getElementById('favoriteOutput');
-      var storedData = JSON.parse(localStorage.getItem('favoriteData'));
-
-      if (storedData && storedData.length > 0) {
-        storedData.forEach(function (item) {
-          var favoriteItemElement = document.createElement('div');
-          favoriteItemElement.classList.add('favorite-item');
-
-          var itemContent = '<pre>' + JSON.stringify(item, null, 2) + '</pre>';
-          var deleteButton = '<button onclick="deleteFavorite(\'' + item.courseTitle + '\')">Delete</button>';
-
-          favoriteItemElement.innerHTML = itemContent + deleteButton;
-          favoriteOutputElement.appendChild(favoriteItemElement);
-        });
-      } else {
-        favoriteOutputElement.innerHTML = '<p>No favorite data found.</p>';
+  <!-- favorite.html -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
       }
-    }
 
-    // Function to delete a specific item from localStorage
-    function deleteFavorite(courseTitle) {
-      var storedData = JSON.parse(localStorage.getItem('favoriteData'));
+      .favorite-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
-      if (storedData) {
-        // Remove the item with the matching courseTitle
-        var updatedData = storedData.filter(function (item) {
-          return item.courseTitle !== courseTitle;
-        });
+      h2 {
+        color: #007bff;
+      }
 
-        // Update localStorage
-        localStorage.setItem('favoriteData', JSON.stringify(updatedData));
+      pre {
+        white-space: pre-wrap;
+      }
+
+      button {
+        background-color: #dc3545;
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #c82333;
+      }
+
+      .favorite-item {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Display the stored data from localStorage -->
+    <div class="favorite-container">
+      <h2>Favorite Courses:</h2>
+      <div id="favoriteOutput"></div>
+    </div>
+
+    <!-- Optional: Add a button to delete all stored data -->
+    <button onclick="deleteAllFavorites()">Delete All Favorites</button>
+
+    <!-- Optional: Add a button to go back to the main page -->
+    <button onclick="goBack()">Go Back</button>
+
+    <!-- JavaScript to retrieve and display the stored data -->
+    <script>
+      // Function to retrieve and display stored data from localStorage
+      function displayFavoriteData() {
+        var favoriteOutputElement = document.getElementById('favoriteOutput');
+        var storedData = JSON.parse(localStorage.getItem('favoriteData'));
+
+        if (storedData && storedData.length > 0) {
+          storedData.forEach(function (item) {
+            var favoriteItemElement = document.createElement('div');
+            favoriteItemElement.classList.add('favorite-item');
+
+            var itemContent = '<pre>' + JSON.stringify(item, null, 2) + '</pre>';
+            var deleteButton = '<button onclick="deleteFavorite(\'' + item.courseTitle + '\')">Delete</button>';
+
+            favoriteItemElement.innerHTML = itemContent + deleteButton;
+            favoriteOutputElement.appendChild(favoriteItemElement);
+          });
+        } else {
+          favoriteOutputElement.innerHTML = '<p>No favorite data found.</p>';
+        }
+      }
+
+      // Function to delete a specific item from localStorage
+      function deleteFavorite(courseTitle) {
+        var storedData = JSON.parse(localStorage.getItem('favoriteData'));
+
+        if (storedData) {
+          // Remove the item with the matching courseTitle
+          var updatedData = storedData.filter(function (item) {
+            return item.courseTitle !== courseTitle;
+          });
+
+          // Update localStorage
+          localStorage.setItem('favoriteData', JSON.stringify(updatedData));
+
+          // Refresh the page to reflect the changes
+          location.reload();
+        }
+      }
+
+      // Function to delete all stored data from localStorage
+      function deleteAllFavorites() {
+        // Remove all stored data from localStorage
+        localStorage.removeItem('favoriteData');
 
         // Refresh the page to reflect the changes
         location.reload();
       }
-    }
 
-    // Function to delete all stored data from localStorage
-    function deleteAllFavorites() {
-      // Remove all stored data from localStorage
-      localStorage.removeItem('favoriteData');
+      // Function to go back to the main page
+      function goBack() {
+        // Redirect to the main page
+        window.location.href = 'ลองปุ่มเปลี่ยนสี';
+      }
 
-      // Refresh the page to reflect the changes
-      location.reload();
-    }
-
-    // Function to go back to the main page
-    function goBack() {
-      // Redirect to the main page
-      window.location.href = 'ลองปุ่มเปลี่ยนสี';
-    }
-
-    // Call the function to display stored data when the page loads
-    displayFavoriteData();
-  </script>
-</body>
-</html>
+      // Call the function to display stored data when the page loads
+      displayFavoriteData();
+    </script>
+  </body>
+  </html>
