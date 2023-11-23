@@ -1,38 +1,40 @@
 <!-- Product List -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Product List</title>
-</head>
-<body>
-    <h2>Product List</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Loop through products and display them -->
-            <tr th:each="product : ${products}">
-                <td th:text="${product.id}"></td>
-                <td th:text="${product.name}"></td>
-                <td th:text="${product.price}"></td>
-                <td>
-                    <!-- Edit Page -->
-                   <button> <a th:href="@{/products/edit/{id}(id=${product.id})}">Edit</a>
-                   </button> 
-                   <!-- Delete Page-->
-                   <button> <a th:href="@{/products/delete/{id}(id=${product.id})}">Delete</a>
-                   </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>                                
-                      <a th:href="@{/products/new}">Add New Product</a>  <!-- Add item page-->
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Product List</title>
+    </head>
+    <body>
+        <h2>Product List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through products and display them -->
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.id}"></td>
+                    <td th:text="${product.name}"></td>
+                    <td th:text="${product.price}"></td>
+                    <td>
+                        <!-- Edit Page -->
+                        <button> <a
+                                th:href="@{/products/edit/{id}(id=${product.id})}">Edit</a>
+                        </button>
+                        <!-- Delete Page-->
+                        <button> <a
+                                th:href="@{/products/delete/{id}(id=${product.id})}">Delete</a>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{/products/new}">Add New Product</a> <!-- Add item page-->
+    </body>
 </html>
