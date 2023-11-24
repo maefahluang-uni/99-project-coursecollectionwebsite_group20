@@ -1,9 +1,14 @@
 package th.mfu.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,6 +24,11 @@ public class UsersModel {
     String password;
 
     String email;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Fav> favs;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Course course;
 
     public Integer getId() {
         return id;
