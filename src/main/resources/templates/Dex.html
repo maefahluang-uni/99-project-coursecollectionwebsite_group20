@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Management</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <a class="btn btn-secondary mb-3" th:href="@{/concerts/}">Back to Concert List</a>
+        <h1>Topic</h1>
+        <ul class="list-group">
+            <li th:each="seat : ${seats}" class="list-group-item">
+                <span th:text="${seat.number}"></span>
+            </li>
+        </ul>
+        <form th:action="@{/concerts/{id}/seats(id=${newseat.concert.id})}" th:object="${newseat}" method="post">
+            <div class="form-group">
+                <input placeholder="Comment" type="text" class="form-control" id="number" th:field="*{number}" required>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Comment</button>
+        </form>
+    </div>
+</body>
+</html>

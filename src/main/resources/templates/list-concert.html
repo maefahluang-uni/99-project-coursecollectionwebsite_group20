@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="mt-5 mb-4">Q&A Board</h1>
+    <a class="btn btn-primary" href="/add-concert/">Add Post</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>About</th>
+                <th>Actions</th>
+            </tr>
+        </thead>        <!-- Description เปลี่ยนจาก Performer-->
+        <tbody>
+            <tr th:each="concert : ${concerts}">
+                <td th:text="${concert.title}"></td>
+                <td th:text="${concert.performer.name}"><a th:href="@{/concerts/{id}/seats(id=${concert.id})}"></a></a></td>
+                <td>
+                    <a class="btn btn-danger" th:href="@{/delete-concert/{id}(id=${concert.id})}">Delete</a>
+                    <a class="btn btn-primary" th:href="@{/concerts/{id}/seats(id=${concert.id})}">dasdasd</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Concert to Book</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+        /* Set a light gray background */
+        color: #333;
+        /* Set the text color to dark gray */
+    }
+
+    .container {
+        border: 1px solid #ccc;
+        /* Add a light border around the container */
+        padding: 20px;
+        background-color: #fff;
+        /* Set the container background to white */
+    }
+
+    h1 {
+        color: #d9534f;
+        /* Set the heading color to a shade of red */
+    }
+
+    table {
+        border: 1px solid #ccc;
+        /* Add a light border around the table */
+    }
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        /* Add a light border around the table cells */
+    }
+
+    th {
+        background-color: #d9534f;
+        /* Set the background color of headers to a shade of red */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+        /* Add a slight white tint to even rows */
+    }
+
+    .btn-primary {
+        background-color: #d9534f;
+        /* Set the button color to a shade of red */
+        border-color: #d43f3a;
+        /* Set the border color to match the button color */
+    }
+
+    .btn-primary:hover {
+        background-color: #d43f3a;
+        /* Darken the button color on hover */
+        border-color: #d43f3a;
+    }
+
+    a {
+        color: #d9534f;
+        /* Set link color to the same shade of red */
+    }
+
+    a:hover {
+        color: #d43f3a;
+        /* Darken link color on hover */
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Concert List</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Performer</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="concert : ${concerts}">
+                    <td th:text="${concert.title}"></td>
+                    <td th:text="${concert.performer.name}"></td>
+                    <td>
+                        <a class="btn btn-primary" th:href="@{/book/concerts/{id}(id=${concert.id})}">Book</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
