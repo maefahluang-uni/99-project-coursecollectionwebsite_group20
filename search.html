@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Searchbar</title>
+    <link rel="stylesheet" href="/Project Files/search.css">
+    <script src="https://kit.fontawesome.com/b279c7143d.js" crossorigin="anonymous"></script>
+</head>   
+<body> 
+    <div class="search-box">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Search anything" autocomplete="off">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box">
+            <!-- Results will go here -->
+        </div>
+    </div>
+    <script src="/Project Files/search.js"></script>
+    <script>
+        // Add a click event listener to the search button
+        document.getElementById('searchButton').addEventListener('click', function() {
+            // Redirect to the desired page, e.g., aa.html
+            window.location.href = '/Project Files/C/C.html'; //อันนี้คือหน้าที่เชื่อม
+            //บทเอาเป็นปมว่า คลิกsearchละพิมที่ตั้งไว้ ละกดค้นหา
+        });
+    </script>
+</body> 
+</html>
+
+
+
