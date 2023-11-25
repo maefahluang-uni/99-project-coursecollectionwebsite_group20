@@ -17,7 +17,6 @@ public class Seat {
 
     private Long id; //pk
     private String number;
-    private boolean booked;
 
     
     @ManyToOne(cascade = CascadeType.MERGE)
@@ -40,13 +39,6 @@ public class Seat {
         this.number = number;
     }
 
-    public boolean isBooked() {
-        return booked;
-    }
-
-    public void setBooked(boolean booked) {
-        this.booked = booked;
-    }
 
     public Concert getConcert() {
         return concert;

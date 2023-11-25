@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seat Management</title>
+    <title>Chat</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
-        <a class="btn btn-secondary mb-3" th:href="@{/concerts/}">Back to Concert List</a>
+        <a class="btn btn-secondary mb-3" th:href="@{/board/}">Back to Post List</a>
             <table class="table table-striped">
 
         <h1>Topic</h1>
         <ul class="list-group">
-            <!--TODO: add <li> for listing all seats -->
+            
             <li th:each="seat : ${seats}" class="list-group-item">
                 <span th:text="${seat.number}"></span>
             </li>
         </ul>
-        <!--TODO: create form for adding a new seat -->
-        <form th:action="@{/concerts/{id}/seats(id=${newseat.concert.id})}" th:object="${newseat}" method="post">
+       
+        <form th:action="@{/board/{id}/chat(id=${newseat.concert.id})}" th:object="${newseat}" method="post">
             <div class="form-group">
                 <input placeholder="Comment" type="text" class="form-control" id="number" th:field="*{number}" required>
                 </select>
