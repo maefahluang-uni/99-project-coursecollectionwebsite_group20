@@ -7,20 +7,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-//TODO: add proper annotation
+
 @Entity
 public class Seat {
 
-    // TODO: add proper annotation
+   
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Long id;
+    private Long id; //pk
     private String number;
-    private String zone;
     private boolean booked;
 
-    // TODO: add proper annotation for relationship to concert
+    
     @ManyToOne(cascade = CascadeType.MERGE)
 
     private Concert concert;
@@ -39,14 +38,6 @@ public class Seat {
 
     public void setNumber(String number) {
         this.number = number;
-    }
-
-    public String getZone() {
-        return zone;
-    }
-
-    public void setZone(String zone) {
-        this.zone = zone;
     }
 
     public boolean isBooked() {

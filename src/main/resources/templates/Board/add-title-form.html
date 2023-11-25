@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Add new post</title>
+    </head>
+    <body>
+        <h1>add post</h1>
+        <form th:action="@{/title}" th:object = "${titleEntity}" method="post">
+            <labe for="title">Title:</labe>
+            <input type="text" id="title" th:field="*{title}" required>
+
+            <h1>Description</h1>
+            <labe for="Description">Description:</labe>
+            <input type="text" id="title" th:field="*{comment.chat}" required>
+            <button type="submit" class="btn btn-primary">Save Post</button>
+        </form>
+    </body>
+</html>

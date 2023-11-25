@@ -1,4 +1,4 @@
-package th.mfu.model;
+package th.mfu.QA.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -8,30 +8,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Concert {
-
+public class TitleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
-    private Long id;         //pk
+    private Long id;
     private String title;
     @OneToOne(cascade = CascadeType.ALL)
-
-    private Performer performer;
-
-    public Concert() {
-    }
-
-    public Concert(String title) {
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    private AboutEntity aboutEntity;
+    public TitleEntity() {
+        
     }
 
     public Long getId() {
@@ -42,11 +27,19 @@ public class Concert {
         this.id = id;
     }
 
-    public Performer getPerformer() {
-        return performer;
+    public String getTitle() {
+        return title;
     }
 
-    public void setPerformer(Performer performer) {
-        this.performer = performer;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public AboutEntity getAboutEntity() {
+        return aboutEntity;
+    }
+
+    public void setAboutEntity(AboutEntity aboutEntity) {
+        this.aboutEntity = aboutEntity;
     }
 }
