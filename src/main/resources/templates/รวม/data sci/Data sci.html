@@ -8,154 +8,159 @@
     <head>
         <!--  เชื่อมกับ bootstrap 5 แบบออนไลน์ จำเป็นต้องใส่เพื่อให้ใช้ Bootstrap5-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
         <link href="/Css/css.css">
-    <!-- Link To Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <!-- Link To Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Link To Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- Link To Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bright Future</title>
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Bright Future</title>
+    </head>
 
 <body>
-    <!-- Website Container Starts -->
-    <div class="website-container">
+<!-- Website Container Starts -->
+<div class="website-container">
 
-        <!-- Home Section Starts -->
-        <section class="home" id="home">
-            <!-- Main Navbar Starts -->
-            <nav class="main-navbar">
-                <a href="/src/main/resources/templates/logout.html" class="logo">
-                    <img src="/images/logo/logo.png">
-                </a>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#News">News</a></li>
-                    <li><a href="#services">Services</a></li>
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+        <!-- Main Navbar Starts -->
+        <nav class="main-navbar">
+            <a href="/src/main/resources/templates/logout.html" class="logo">
+                <img src="/images/logo/logo.png">
+            </a>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#services">Services</a></li>
 
-                    <li><a href="/Project Files/index.html" id="logout-btn">Logout</a></li>
+                <li><a href="/Project Files/index.html" id="logout-btn">Logout</a></li>
+            </ul>
+            <script>
+                document.getElementById('logout-btn').addEventListener('click', function() {
+                    // Add your logout logic here
+                    alert('Logout button clicked!');
+                });
+            </script>
+
+            <a href="#" class="get-started-btn-container">
+                <!-- Add your get-started button content here -->
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Course
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/uxui">UX/UI</a></li>
+                    <li><a class="dropdown-item" href="/js">Java Script</a></li>
+                    <li><a class="dropdown-item" href="/ca">C#</a></li>
+                    <li><a class="dropdown-item" href="/c+">C++</a></li>
+                    <li><a class="dropdown-item" href="/sql">My SQL</a></li>
+                    <li><a class="dropdown-item" href="/py">Python</a></li>
+                    <li><a class="dropdown-item" href="/html">HTML</a></li>
+                    <li><a class="dropdown-item" href="/data">Data Science</a></li>
+                    <li><a class="dropdown-item" href="/cs">CSS</a></li>
+                    <li><a class="dropdown-item" href="/http">HTTP</a></li>
+                    <li><a class="dropdown-item" href="/java">Java Course</a></li>
+                    <<<<<<< HEAD
+                    <li><a class="dropdown-item" href="/c"> Course</a></li>
+                    <!-- Add more courses here -->
+                    =======
+                    <li><a class="dropdown-item" href="/c">C Course</a></li>
+                    <!-- Add more courses here -->
+                    >>>>>>> f0e08bc (use computer friend)
+
                 </ul>
-                <script>
-                    document.getElementById('logout-btn').addEventListener('click', function() {
-                        // Add your logout logic here
-                        alert('Logout button clicked!');
-                    });
-                </script>
-                
-                <a href="#" class="get-started-btn-container">
-                    <!-- Add your get-started button content here -->
-                </a>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Course
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="/uxui">UX/UI</a></li>
-                        <li><a class="dropdown-item" href="/js">Java Script</a></li>
-                        <li><a class="dropdown-item" href="/ca">C#</a></li>
-                        <li><a class="dropdown-item" href="/c+">C++</a></li>
-                        <li><a class="dropdown-item" href="/sql">My SQL</a></li>
-                        <li><a class="dropdown-item" href="/py">Python</a></li>
-                        <li><a class="dropdown-item" href="/html">HTML</a></li>
-                        <li><a class="dropdown-item" href="/data">Data Science</a></li>
-                        <li><a class="dropdown-item" href="/cs">CSS</a></li>
-                        <li><a class="dropdown-item" href="/http">HTTP</a></li>
-                        <li><a class="dropdown-item" href="/java">Java Course</a></li>
-                        <li><a class="dropdown-item" href="/c"> Course</a></li>
-                            <!-- Add more courses here -->
+            </div>
+            </form>
+        </nav>
 
-                        </ul>
-                    </div>
-                </form>
+        <!-- Courses Section Starts -->
+        <section class="courses" id="courses">
+            <!-- Courses Header Starts -->
+            <header class="section-header">
+                <div class="header-text">
+
+                </div>
+            </header>
+            <!-- Courses Header Ends -->
+
+            <!-- Courses Contents Starts -->
+            <h1>Data Science course</h1>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+
+                    </a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            All
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="/data">All</a></li>
+                            <li><a class="dropdown-item" href="/datab">Beginners</a></li>
+                            <li><a class="dropdown-item" href="/datai">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/dataad">Advanced</a></li>
+                            </form>
             </nav>
-
-            <!-- Courses Section Starts -->
-            <section class="courses" id="courses">
-                <!-- Courses Header Starts -->
-                <header class="section-header">
-                    <div class="header-text">
-                    
+            </form>
+            </nav>
+            <div class="course-contents">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <img src="/images/data/image 9.02894563141592.jpg">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Package</h3>
+                        </div>
                     </div>
-                </header>
-                <!-- Courses Header Ends -->
+                    <h2 class="course-title">Understanding Data Science.</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://www.datacamp.com/courses/understanding-data-science?utm_source=google&utm_medium=paid_search&utm_campaignid=12492439802&utm_adgroupid=144626425196&utm_device=c&utm_keyword=data%20science%20beginner&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=679431012956&utm_targetid=kwd-346467178686&utm_loc_interest_ms=&utm_loc_physical_ms=21039&utm_content=field~data-sci~beginner&utm_campaign=220808_1-sea~field~data-sci_2-b2c_3-row-p2_4-prc_5-na_6-na_7-le_8-pdsh-go_9-na_10-na_11-na-fawnov23&gclid=Cj0KCQiAjMKqBhCgARIsAPDgWlzN6WUt2jQblKhqzNq81OKZOOfiSo4dGjVGAehhzuId0G8vvPU_qdoaAksUEALw_wcB" role="button"style="background-color: #512da8;"> Start</a>
+                    </div>
+                </div>
 
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <img src="/images/data/image 10.1.jpg">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Free</h3>
+                        </div>
+                    </div>
+                    <h2 class="course-title">Data Science for Beginners.</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://www.geeksforgeeks.org/data-science-for-beginners/" role="button"style="background-color: #512da8;"> Start</a>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <img src="/images/data/image 30.1.jpg">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Free</h3>
+                        </div>
+                    </div>
+                    <h2 class="course-title">Data Science for Beginners - A Curriculum.</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://microsoft.github.io/Data-Science-For-Beginners/#/" role="button"style="background-color: #512da8;"> Start</a>
+                    </div>
+                </div>
                 <!-- Courses Contents Starts -->
-                <h1>Data Science course</h1>
-                <nav class="navbar navbar-light bg-light">
-                  <div class="container-fluid">
-              
-                  </a>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        All
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="/data">All</a></li>
-                        <li><a class="dropdown-item" href="/datab">Beginners</a></li>
-                        <li><a class="dropdown-item" href="/datai">Intermediate</a></li>
-                        <li><a class="dropdown-item" href="/dataad">Advanced</a></li>
-                </form>
-            </nav>
-                </form>
-            </nav>
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 9.02894563141592.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">Understanding Data Science.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.datacamp.com/courses/understanding-data-science?utm_source=google&utm_medium=paid_search&utm_campaignid=12492439802&utm_adgroupid=144626425196&utm_device=c&utm_keyword=data%20science%20beginner&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=679431012956&utm_targetid=kwd-346467178686&utm_loc_interest_ms=&utm_loc_physical_ms=21039&utm_content=field~data-sci~beginner&utm_campaign=220808_1-sea~field~data-sci_2-b2c_3-row-p2_4-prc_5-na_6-na_7-le_8-pdsh-go_9-na_10-na_11-na-fawnov23&gclid=Cj0KCQiAjMKqBhCgARIsAPDgWlzN6WUt2jQblKhqzNq81OKZOOfiSo4dGjVGAehhzuId0G8vvPU_qdoaAksUEALw_wcB" role="button"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
-
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 10.1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">Data Science for Beginners.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.geeksforgeeks.org/data-science-for-beginners/" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 30.1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">Data Science for Beginners - A Curriculum.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://microsoft.github.io/Data-Science-For-Beginners/#/" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                                    <!-- Courses Contents Starts -->
                 <div class="course-contents">
                     <!-- Course Card 1 -->
                     <div class="course-card">
@@ -171,7 +176,7 @@
                         </div>
                         <div class="course-ratings">
                             <a class="btn btn-primary" href="https://www.youtube.com/watch?v=ua-CiDNNj30" role="button"style="background-color: #512da8;"> Start</a>
-                    </div>
+                        </div>
                     </div>
 
                     <!-- Course Card 2 -->
@@ -206,139 +211,139 @@
                             <a class="btn btn-primary" href="https://www.udacity.com/course/introduction-to-data-science--cd0017#plans" role="button"style="background-color: #512da8;"> Start</a>
                         </div>
                     </div>
-                                    <!-- Courses Contents Starts -->
+                    <!-- Courses Contents Starts -->
 
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/logo/udacity.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                    <div class="course-contents">
+                        <!-- Course Card 1 -->
+                        <div class="course-card">
+                            <img src="/images/logo/udacity.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Free</h3>
+                                </div>
+                            </div>
+                            <h2 class="course-title">Data Scientist in Python.</h2>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.dataquest.io/path/data-scientist/" role="button"style="background-color: #512da8;"> Start</a>
                             </div>
                         </div>
-                        <h2 class="course-title">Data Scientist in Python.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.dataquest.io/path/data-scientist/" role="button"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
 
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 9.02894563141592.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                        <!-- Course Card 2 -->
+                        <div class="course-card">
+                            <img src="/images/data/image 9.02894563141592.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Package</h3>
+                                </div>
+                            </div>
+                            <h2 class="course-title">Data Science for Business.</h2>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.datacamp.com/courses/data-science-for-business" role="button"style="background-color: #512da8;"> Start</a>
                             </div>
                         </div>
-                        <h2 class="course-title">Data Science for Business.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.datacamp.com/courses/data-science-for-business" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 32.1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                        <!-- Course Card 3 -->
+                        <div class="course-card">
+                            <img src="/images/data/image 32.1.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Package</h3>
+                                </div>
+                            </div>
+                            <h2 class="course-title">Data Science Intermediate Course.</h2>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.stutern.com/intermediate-course/data_science.html" role="button"style="background-color: #512da8;"> Start</a>
                             </div>
                         </div>
-                        <h2 class="course-title">Data Science Intermediate Course.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.stutern.com/intermediate-course/data_science.html" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                                    <!-- Courses Contents Starts -->
+                        <!-- Courses Contents Starts -->
 
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/java/image 20.20.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                        <div class="course-contents">
+                            <!-- Course Card 1 -->
+                            <div class="course-card">
+                                <img src="/images/java/image 20.20.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Package</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">Advanced Data Science with IBM Specialization.</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.learnvern.com/course/advanced-java-tutorial" role="button"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">Advanced Data Science with IBM Specialization.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.learnvern.com/course/advanced-java-tutorial" role="button"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
 
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/logo/coursera.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                            <!-- Course Card 2 -->
+                            <div class="course-card">
+                                <img src="/images/logo/coursera.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Package</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">Google Advanced Data Analytics Professional Certificate.</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.coursera.org/professional-certificates/google-advanced-data-analytics" role="button"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">Google Advanced Data Analytics Professional Certificate.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.coursera.org/professional-certificates/google-advanced-data-analytics" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card">
-                        <img src="/images/data/image 88.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                            <!-- Course Card 3 -->
+                            <div class="course-card">
+                                <img src="/images/data/image 88.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Package</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">Certification Programme in Advanced Data Science.</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.digitalregenesys.com/all-courses/data-science/advanced-data-science" role="button"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">Certification Programme in Advanced Data Science.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.digitalregenesys.com/all-courses/data-science/advanced-data-science" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <img src="/images/data/image1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                            <div class="course-card">
+                                <img src="/images/data/image1.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Free</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">Intro to Data Science - Crash Course for Beginners.</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.youtube.com/watch?v=N6BghzuFLIg" role="button"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
+                            <!-- Add more course cards as needed -->
                         </div>
-                        <h2 class="course-title">Intro to Data Science - Crash Course for Beginners.</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 1254+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=N6BghzuFLIg" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Add more course cards as needed -->
-                </div>
-                <!-- Courses Contents Ends -->
-
-            </section>
-            <!-- Courses Section Ends -->
+                        <!-- Courses Contents Ends -->
 
         </section>
-        <!-- Home Section Ends -->
+        <!-- Courses Section Ends -->
 
-    </div>
-    <!-- Website Container Ends -->
+    </section>
+    <!-- Home Section Ends -->
 
-    <!-- Add your scripts here -->
+</div>
+<!-- Website Container Ends -->
+
+<!-- Add your scripts here -->
 
 </body>
 

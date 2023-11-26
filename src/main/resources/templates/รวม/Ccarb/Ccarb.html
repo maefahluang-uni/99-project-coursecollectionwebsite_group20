@@ -8,162 +8,166 @@
     <head>
         <!--  เชื่อมกับ bootstrap 5 แบบออนไลน์ จำเป็นต้องใส่เพื่อให้ใช้ Bootstrap5-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
         <link href="/Css/css.css">
-    <!-- Link To Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <!-- Link To Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Link To Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- Link To Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bright Future</title>
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Bright Future</title>
+    </head>
 
 <body>
-    <!-- Website Container Starts -->
-    <div class="website-container">
+<!-- Website Container Starts -->
+<div class="website-container">
 
-        <!-- Home Section Starts -->
-        <section class="home" id="home">
-            <!-- Main Navbar Starts -->
-            <nav class="main-navbar">
-                <a href="/Project Files/logout.html" class="logo">
-                    <img src="/Project Files/images/logo.png">
-                </a>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#News">News</a></li>
-                    <li><a href="#services">Services</a></li>
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+        <!-- Main Navbar Starts -->
+        <nav class="main-navbar">
+            <a href="/Project Files/logout.html" class="logo">
+                <img src="/Project Files/images/logo.png">
+            </a>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#services">Services</a></li>
 
-                    <li><a href="/Project Files/index.html" id="logout-btn">Logout</a></li>
+                <li><a href="/Project Files/index.html" id="logout-btn">Logout</a></li>
+            </ul>
+            <script>
+                document.getElementById('logout-btn').addEventListener('click', function() {
+                    // Add your logout logic here
+                    alert('Logout button clicked!');
+                });
+            </script>
+
+            <a href="#" class="get-started-btn-container">
+                <!-- Add your get-started button content here -->
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Course
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/uxui">UX/UI</a></li>
+                    <li><a class="dropdown-item" href="/js">Java Script</a></li>
+                    <li><a class="dropdown-item" href="/ca">C#</a></li>
+                    <li><a class="dropdown-item" href="/c+">C++</a></li>
+                    <li><a class="dropdown-item" href="/sql">My SQL</a></li>
+                    <li><a class="dropdown-item" href="/py">Python</a></li>
+                    <li><a class="dropdown-item" href="/html">HTML</a></li>
+                    <li><a class="dropdown-item" href="/data">Data Science</a></li>
+                    <li><a class="dropdown-item" href="/cs">CSS</a></li>
+                    <li><a class="dropdown-item" href="/http">HTTP</a></li>
+                    <li><a class="dropdown-item" href="/java">Java Course</a></li>
+                    <<<<<<< HEAD
+                    <li><a class="dropdown-item" href="/c"> Course</a></li>
+                    <!-- Add more courses here -->
+                    =======
+                    <li><a class="dropdown-item" href="/c">C Course</a></li>
+                    >>>>>>> f0e08bc (use computer friend)
+
                 </ul>
-                <script>
-                    document.getElementById('logout-btn').addEventListener('click', function() {
-                        // Add your logout logic here
-                        alert('Logout button clicked!');
-                    });
-                </script>
-                
-                <a href="#" class="get-started-btn-container">
-                    <!-- Add your get-started button content here -->
-                </a>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Course
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="/uxui">UX/UI</a></li>
-                        <li><a class="dropdown-item" href="/js">Java Script</a></li>
-                        <li><a class="dropdown-item" href="/ca">C#</a></li>
-                        <li><a class="dropdown-item" href="/c+">C++</a></li>
-                        <li><a class="dropdown-item" href="/sql">My SQL</a></li>
-                        <li><a class="dropdown-item" href="/py">Python</a></li>
-                        <li><a class="dropdown-item" href="/html">HTML</a></li>
-                        <li><a class="dropdown-item" href="/data">Data Science</a></li>
-                        <li><a class="dropdown-item" href="/cs">CSS</a></li>
-                        <li><a class="dropdown-item" href="/http">HTTP</a></li>
-                        <li><a class="dropdown-item" href="/java">Java Course</a></li>
-                        <li><a class="dropdown-item" href="/c"> Course</a></li>
-                            <!-- Add more courses here -->
+            </div>
+            </form>
+        </nav>
 
-                        </ul>
-                    </div>
-                </form>
+        <!-- Courses Section Starts -->
+        <section class="courses" id="courses">
+            <!-- Courses Header Starts -->
+            <header class="section-header">
+                <div class="header-text">
+
+                </div>
+            </header>
+            <!-- Courses Header Ends -->
+
+            <!-- Courses Contents Starts -->
+            <h1>C# course</h1>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+
+                    </a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            All
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li                        <li><a class="dropdown-item" href="/cช">All</a></li>
+                            <li><a class="dropdown-item" href="/cชb">Beginners</a></li>
+                            <li><a class="dropdown-item" href="/cชi">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/cชad">Advanced</a></li>><a class="dropdown-item" href="/c+">All</a></li>
+                            <li><a class="dropdown-item" href="/c+b">Beginners</a></li>
+                            <li><a class="dropdown-item" href="/c+i">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/c+ad">Advanced</a></li>
+                            </form>
             </nav>
-
-            <!-- Courses Section Starts -->
-            <section class="courses" id="courses">
-                <!-- Courses Header Starts -->
-                <header class="section-header">
-                    <div class="header-text">
-                    
+            </form>
+            </nav>
+            <div class="course-contents">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <img src="/images/cช/Cช be1.jpg">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Free</h3>
+                        </div>
                     </div>
-                </header>
-                <!-- Courses Header Ends -->
+                    <h2 class="course-title">Learn C# Course
+                        for beginners</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://www.codecademy.com/learn/learn-c-sharp"style="background-color: #512da8;"> Start</a>
+                    </div>
+                </div>
 
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <img src="/images/logo/udemy.jpg"> <!-- Adv-->
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Free</h3>
+                        </div>
+                    </div>
+                    <h2 class="course-title">C# Advanced Topics:
+                        Prepare for Technical
+                        Interviews </h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://www.udemy.com/course/advanced-csharp-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879424134_._ad_535397279649_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9074727_._pd__._&matchtype=&gclid=CjwKCAjwnOipBhBQEiwACyGLujdWI5gB2ac7n1ND3fGHVaUHjyNyOikkc63iZSHVTT-rVxLG84w5ARoCXm0QAvD_BwE" role="button"style="background-color: #512da8;"> Start</a>                        </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <img src="/images/logo/coursera.jpg"> <!-- Advanced -->
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Package</h3>
+                        </div>
+                    </div>
+                    <h2 class="course-title">C# Advanced Topics:
+                        Prepare for Technical
+                        Interviews</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <a class="btn btn-primary" href="https://www.coursera.org/learn/introduction-programming-unity?irclickid=wucyI5wGBxyPR9%3AXiW14pw2GUkFQ1zR4ZXjeyo0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3294490&utm_content=b2c" role="button"style="background-color: #512da8;"> Start</a>
+                    </div>
+                </div>
                 <!-- Courses Contents Starts -->
-                <h1>C# course</h1>
-                <nav class="navbar navbar-light bg-light">
-                  <div class="container-fluid">
-              
-                  </a>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        All
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li                        <li><a class="dropdown-item" href="/cช">All</a></li>
-                        <li><a class="dropdown-item" href="/cชb">Beginners</a></li>
-                        <li><a class="dropdown-item" href="/cชi">Intermediate</a></li>
-                        <li><a class="dropdown-item" href="/cชad">Advanced</a></li>><a class="dropdown-item" href="/c+">All</a></li>
-                <li><a class="dropdown-item" href="/c+b">Beginners</a></li>
-                <li><a class="dropdown-item" href="/c+i">Intermediate</a></li>
-                <li><a class="dropdown-item" href="/c+ad">Advanced</a></li>
-                </form>
-            </nav>
-                </form>
-            </nav>
                 <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช be1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">Learn C# Course
-                            for beginners</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.codecademy.com/learn/learn-c-sharp"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
-
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/logo/udemy.jpg"> <!-- Adv-->
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">C# Advanced Topics: 
-                            Prepare for Technical
-                            Interviews </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.udemy.com/course/advanced-csharp-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879424134_._ad_535397279649_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9074727_._pd__._&matchtype=&gclid=CjwKCAjwnOipBhBQEiwACyGLujdWI5gB2ac7n1ND3fGHVaUHjyNyOikkc63iZSHVTT-rVxLG84w5ARoCXm0QAvD_BwE" role="button"style="background-color: #512da8;"> Start</a>                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card">
-                        <img src="/images/logo/coursera.jpg"> <!-- Advanced -->
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">C# Advanced Topics: 
-                            Prepare for Technical
-                            Interviews</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.coursera.org/learn/introduction-programming-unity?irclickid=wucyI5wGBxyPR9%3AXiW14pw2GUkFQ1zR4ZXjeyo0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3294490&utm_content=b2c" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                                    <!-- Courses Contents Starts -->
-              <div class="course-contents">
                     <!-- Course Card 1 -->
                     <div class="course-card">
                         <img src="/images/cช/Cช ad1.jpg">
@@ -178,7 +182,7 @@
                         </div>
                         <div class="course-ratings">
                             <a class="btn btn-primary" href="https://www.youtube.com/watch?v=YT8s-90oDC0" role="button"style="background-color: #512da8;"> Start</a>
-                    </div>
+                        </div>
                     </div>
 
                     <!-- Course Card 2 -->
@@ -205,8 +209,8 @@
                                 <h3>Package</h3>
                             </div>
                         </div>
-                        <h2 class="course-title">C# for Programmers: 
-                            A Practical Guide 
+                        <h2 class="course-title">C# for Programmers:
+                            A Practical Guide
                             for beginner</h2>
                         <div class="course-desc">
                             <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
@@ -215,236 +219,236 @@
                             <a class="btn btn-primary" href="https://www.educative.io/courses/c-sharp-for-programmers-a-practical-guide?irclickid=wucyI5wGBxyPR9%3AXiW14pw2GUkFQ1GyYZXjeyo0&aff=BXjX&impactaffid=2890636&irgwc=1"style="background-color: #512da8;"> Start</a>
                         </div>
                     </div>
-                                    <!-- Courses Contents Starts -->
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">  <!-- Adv-->
-                        <img src="/images/logo/skills.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                    <!-- Courses Contents Starts -->
+                    <div class="course-contents">
+                        <!-- Course Card 1 -->
+                        <div class="course-card">  <!-- Adv-->
+                            <img src="/images/logo/skills.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Package</h3>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">Advanced C# 7 Collections
+                            <h2 class="course-title">Advanced C# 7 Collections
                             </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.pluralsight.com/courses/csharp-collections-advanced?utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=ssi-apac-xyz-dynamic&utm_content=free-trial&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFI78GK2LOkwYO_xF4PMOsQ9nHzs9o1mpk3c82cHZN0O2P1YoYaH7MBoC4HoQAvD_BwE"style="background-color: #512da8;"> Start</a>
+                            </div>
                         </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.pluralsight.com/courses/csharp-collections-advanced?utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=ssi-apac-xyz-dynamic&utm_content=free-trial&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFI78GK2LOkwYO_xF4PMOsQ9nHzs9o1mpk3c82cHZN0O2P1YoYaH7MBoC4HoQAvD_BwE"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
 
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช be4.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                        <!-- Course Card 2 -->
+                        <div class="course-card">
+                            <img src="/images/cช/Cช be4.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Free</h3>
+                                </div>
+                            </div>
+                            <h2 class="course-title">C# Full Course : C# Tutorial for Beginners</h2>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=M5ugY7fWydE"style="background-color: #512da8;"> Start</a>
                             </div>
                         </div>
-                        <h2 class="course-title">C# Full Course : C# Tutorial for Beginners</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=M5ugY7fWydE"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช be3.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                        <!-- Course Card 3 -->
+                        <div class="course-card">
+                            <img src="/images/cช/Cช be3.jpg">
+                            <div class="category">
+                                <div class="subject">
+                                    <h3>Free</h3>
+                                </div>
                             </div>
-                        </div> 
-                        <h2 class="course-title">C# Tutorial - Full Course for Beginners</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                            <h2 class="course-title">C# Tutorial - Full Course for Beginners</h2>
+                            <div class="course-desc">
+                                <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                            </div>
+                            <div class="course-ratings">
+                                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=GhQdlIFylQ8" role="button"style="background-color: #512da8;"> Start</a>
+                            </div>
                         </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=GhQdlIFylQ8" role="button"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                                    <!-- Courses Contents Starts -->
+                        <!-- Courses Contents Starts -->
 
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card"> <!-- Int -->
-                        <img src="/images/logo/educative.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
+                        <div class="course-contents">
+                            <!-- Course Card 1 -->
+                            <div class="course-card"> <!-- Int -->
+                                <img src="/images/logo/educative.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Package</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">C# Intermediate: Classes, Interfaces
+                                    and OOP</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/?dtcode=qlXjw6q3ebRE&utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_88010211481_._ad_535397282061_._kw__._de_c_._dm__._pl__._ti_dsa-406594358574_._li_9074727_._pd__._&matchtype=&gad_source=1&gclid=CjwKCAiA6byqBhAWEiwAnGCA4DRG3hxZgcadTJlJtmTF3Od4ToSxFvyRRcpq79-7RgMwM8iSsNxmGxoCxiEQAvD_BwE"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">C# Intermediate: Classes, Interfaces 
-                            and OOP</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/?dtcode=qlXjw6q3ebRE&utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_88010211481_._ad_535397282061_._kw__._de_c_._dm__._pl__._ti_dsa-406594358574_._li_9074727_._pd__._&matchtype=&gad_source=1&gclid=CjwKCAiA6byqBhAWEiwAnGCA4DRG3hxZgcadTJlJtmTF3Od4ToSxFvyRRcpq79-7RgMwM8iSsNxmGxoCxiEQAvD_BwE"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
 
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช int1.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                            <!-- Course Card 2 -->
+                            <div class="course-card">
+                                <img src="/images/cช/Cช int1.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Free</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">C# Programming • C# Intermediate Level</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.youtube.com/watch?v=qMtziGgBuJ0"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">C# Programming • C# Intermediate Level</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=qMtziGgBuJ0"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                    <!-- Course Card 3 -->
-                    <div class="course-card"> <!--  -->
-                        <img src="/images/logo/eduonix.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                              
-                            </div>
-                        </div>
-                        <h2 class="course-title">Learn C# Coding Intermediate</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.eduonix.com/learn-csharp-coding-intermediate-csharp-classes-methods-and-oops"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                      <!-- Courses Contents Starts -->
+                            <!-- Course Card 3 -->
+                            <div class="course-card"> <!--  -->
+                                <img src="/images/logo/eduonix.jpg">
+                                <div class="category">
+                                    <div class="subject">
+                                        <h3>Free</h3>
 
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช int2.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
+                                    </div>
+                                </div>
+                                <h2 class="course-title">Learn C# Coding Intermediate</h2>
+                                <div class="course-desc">
+                                    <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                </div>
+                                <div class="course-ratings">
+                                    <a class="btn btn-primary" href="https://www.eduonix.com/learn-csharp-coding-intermediate-csharp-classes-methods-and-oops"style="background-color: #512da8;"> Start</a>
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="course-title">Create a C# Application from Start to Finish - Complete Course
-                        </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=wfWxdh-_k_4"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช int3.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title"> C# Programming (Intermediate) 
-                        </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=1Gcoql5IIh8&list=PL_pbwdIyffslHaBdS3RUW26RKzSjkl8m4"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                      <!-- Course Card 3 -->
-                      <div class="course-card">
-                        <img src="/images/cช/Cช ad2.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                              
-                            </div>
-                        </div>
-                        <h2 class="course-title">C# Programming • C# Advanced Level 
-                        </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=MEUM6y0x6C0&list=PLS9G7A6kaaHPdxiIQx9Zo1RgdN64cJfLS"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                      <!-- Courses Contents Starts -->
+                            <!-- Courses Contents Starts -->
 
-                <div class="course-contents">
-                    <!-- Course Card 1 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช ad3.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">C# Access Modifiers (beyond public and private) .</h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=jcn5uCZAk2w&list=PLLWMQd6PeGY12yNE714jffLFnMVZCwvvZ"style="background-color: #512da8;"> Start</a>
-                    </div>
-                    </div>
-                    <!-- Course Card 2 -->
-                    <div class="course-card">
-                        <img src="/images/cช/Cช be5.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Free</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">🔥เขียนโปรแกรมภาษา C# 
-                        </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=4_c5EBr0whM"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
-                      <!-- Course Card 3 -->
-                      <div class="course-card"> <!-- Int -->
-                        <img src="/images/logo/udemy.jpg">
-                        <div class="category">
-                            <div class="subject">
-                                <h3>Package</h3>
-                            </div>
-                        </div>
-                        <h2 class="course-title">C# Intermediate: Classes, Interfaces and OOP
-                        </h2>
-                        <div class="course-desc">
-                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
-                        </div>
-                        <div class="course-ratings">
-                            <a class="btn btn-primary" href="https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/"style="background-color: #512da8;"> Start</a>
-                        </div>
-                    </div>
+                            <div class="course-contents">
+                                <!-- Course Card 1 -->
+                                <div class="course-card">
+                                    <img src="/images/cช/Cช int2.jpg">
+                                    <div class="category">
+                                        <div class="subject">
+                                            <h3>Free</h3>
+                                        </div>
+                                    </div>
+                                    <h2 class="course-title">Create a C# Application from Start to Finish - Complete Course
+                                    </h2>
+                                    <div class="course-desc">
+                                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                    </div>
+                                    <div class="course-ratings">
+                                        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=wfWxdh-_k_4"style="background-color: #512da8;"> Start</a>
+                                    </div>
+                                </div>
+                                <!-- Course Card 2 -->
+                                <div class="course-card">
+                                    <img src="/images/cช/Cช int3.jpg">
+                                    <div class="category">
+                                        <div class="subject">
+                                            <h3>Free</h3>
+                                        </div>
+                                    </div>
+                                    <h2 class="course-title"> C# Programming (Intermediate)
+                                    </h2>
+                                    <div class="course-desc">
+                                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                    </div>
+                                    <div class="course-ratings">
+                                        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=1Gcoql5IIh8&list=PL_pbwdIyffslHaBdS3RUW26RKzSjkl8m4"style="background-color: #512da8;"> Start</a>
+                                    </div>
+                                </div>
+                                <!-- Course Card 3 -->
+                                <div class="course-card">
+                                    <img src="/images/cช/Cช ad2.jpg">
+                                    <div class="category">
+                                        <div class="subject">
+                                            <h3>Free</h3>
 
-                  
-                    <!-- Add more course cards as needed -->
-                </div>
-                <!-- Courses Contents Ends -->
+                                        </div>
+                                    </div>
+                                    <h2 class="course-title">C# Programming • C# Advanced Level
+                                    </h2>
+                                    <div class="course-desc">
+                                        <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                    </div>
+                                    <div class="course-ratings">
+                                        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=MEUM6y0x6C0&list=PLS9G7A6kaaHPdxiIQx9Zo1RgdN64cJfLS"style="background-color: #512da8;"> Start</a>
+                                    </div>
+                                </div>
+                                <!-- Courses Contents Starts -->
 
-            </section>
-            <!-- Courses Section Ends -->
+                                <div class="course-contents">
+                                    <!-- Course Card 1 -->
+                                    <div class="course-card">
+                                        <img src="/images/cช/Cช ad3.jpg">
+                                        <div class="category">
+                                            <div class="subject">
+                                                <h3>Free</h3>
+                                            </div>
+                                        </div>
+                                        <h2 class="course-title">C# Access Modifiers (beyond public and private) .</h2>
+                                        <div class="course-desc">
+                                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                        </div>
+                                        <div class="course-ratings">
+                                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=jcn5uCZAk2w&list=PLLWMQd6PeGY12yNE714jffLFnMVZCwvvZ"style="background-color: #512da8;"> Start</a>
+                                        </div>
+                                    </div>
+                                    <!-- Course Card 2 -->
+                                    <div class="course-card">
+                                        <img src="/images/cช/Cช be5.jpg">
+                                        <div class="category">
+                                            <div class="subject">
+                                                <h3>Free</h3>
+                                            </div>
+                                        </div>
+                                        <h2 class="course-title">🔥เขียนโปรแกรมภาษา C#
+                                        </h2>
+                                        <div class="course-desc">
+                                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                        </div>
+                                        <div class="course-ratings">
+                                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=4_c5EBr0whM"style="background-color: #512da8;"> Start</a>
+                                        </div>
+                                    </div>
+                                    <!-- Course Card 3 -->
+                                    <div class="course-card"> <!-- Int -->
+                                        <img src="/images/logo/udemy.jpg">
+                                        <div class="category">
+                                            <div class="subject">
+                                                <h3>Package</h3>
+                                            </div>
+                                        </div>
+                                        <h2 class="course-title">C# Intermediate: Classes, Interfaces and OOP
+                                        </h2>
+                                        <div class="course-desc">
+                                            <span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+                                        </div>
+                                        <div class="course-ratings">
+                                            <a class="btn btn-primary" href="https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/"style="background-color: #512da8;"> Start</a>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Add more course cards as needed -->
+                                </div>
+                                <!-- Courses Contents Ends -->
 
         </section>
-        <!-- Home Section Ends -->
+        <!-- Courses Section Ends -->
 
-    </div>
-    <!-- Website Container Ends -->
+    </section>
+    <!-- Home Section Ends -->
 
-    <!-- Add your scripts here -->
+</div>
+<!-- Website Container Ends -->
+
+<!-- Add your scripts here -->
 
 </body>
 
