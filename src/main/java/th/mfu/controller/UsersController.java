@@ -56,6 +56,98 @@ public class UsersController {
         return "/รวม/js/java s ad";
     }
     //===============================
+        // =====================================================
+      @GetMapping("/http")
+    public String Showasd(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/http/HTTP";
+    }
+     @GetMapping("/httpb")
+    public String Showhh(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/http/HTTP be";
+    }
+     @GetMapping("/httpi")
+    public String Showhtia(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/http/HTTP int";
+    }
+     @GetMapping("/httpad")
+    public String Showhhtpad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/http/HTTP ad";
+    }
+    //===============================
+    // =====================================================
+      @GetMapping("/java")
+    public String Showjava(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/java/java";
+    }
+     @GetMapping("/javab")
+    public String Showh(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/java/java be";
+    }
+     @GetMapping("/javai")
+    public String Showhha(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/java/java int";
+    }
+     @GetMapping("/javaad")
+    public String Showjha(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/java/java ad";
+    }
+
+    //===============================
+      // =====================================================
+      @GetMapping("/sql")
+    public String Showsql(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/my sql/MY SQL";
+    }
+     @GetMapping("/sqlb")
+    public String Showsqlb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/my sql/MY SQL be";
+    }
+     @GetMapping("/sqli")
+    public String Showsqli(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/my sql/MY SQL int";
+    }
+     @GetMapping("/sqlad")
+    public String Showsqlad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/my sql/MY SQL ad";
+    }
+    
+    //===============================
+     
+        // =====================================================
+      @GetMapping("/py")
+    public String Showpy(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/python/";
+    }
+     @GetMapping("/pyb")
+    public String Showpyb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/python/Python be";
+    }
+     @GetMapping("/pyi")
+    public String Showpyi(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+         return "/รวม/python/Python int";
+    }
+     @GetMapping("/pyad")
+    public String Showpyad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/python/Python ad";
+    }
+    
+    //===============================
     @PostMapping("/register")
     public String register(@ModelAttribute UsersModel usersModel) {
         System.out.println("register request: " + usersModel);
@@ -75,4 +167,5 @@ public class UsersController {
             return "error_page";
         }
     }
+
 }
