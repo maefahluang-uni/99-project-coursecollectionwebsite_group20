@@ -17,8 +17,9 @@
           <form action="#" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
+              <form  method="post" action="/login" th.object="${loginRequest}">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" /></form>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
@@ -40,11 +41,13 @@
               <input type="email" placeholder="Email" />
             </div>
             <div class="input-field">
+              <form method="post" action="/register" th.object="${registerRequest}">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
+            </form>
             </div>
             <input type="submit" class="btn" value="Sign up" />
-            <div class="social-media">  
+            <div class="social-media">
               </a>
             </div>
           </form>
