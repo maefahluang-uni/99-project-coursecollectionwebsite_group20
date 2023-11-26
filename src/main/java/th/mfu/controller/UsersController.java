@@ -44,7 +44,7 @@ public class UsersController {
         UsersModel authenticated = usersService.authenticated(usersModel.getLogin(), usersModel.getPassword());
         if (authenticated != null) {
             model.addAttribute("userLogin", authenticated.getLogin());
-            return "list-concert";
+            return "mainL";
         } else {
             return "error_page";
         }

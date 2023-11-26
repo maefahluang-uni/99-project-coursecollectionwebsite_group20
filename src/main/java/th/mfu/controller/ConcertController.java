@@ -25,7 +25,13 @@ public class ConcertController {
     @GetMapping("/board")
     public String listConcerts(Model model) {
         model.addAttribute("concerts", concertRepo.findAll());
-        return "list-concert";
+        return "/รวม/main";
+    }
+
+    @GetMapping("/cd")
+    public String Showmain(Model model) {
+        model.addAttribute("concerts", concertRepo.findAll());
+        return "/รวม/news";
     }
 
     @GetMapping("/add-board")
