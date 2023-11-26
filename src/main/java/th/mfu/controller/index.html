@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+</head>
+<body>
+
+    <h1>Users List</h1>
+
+    <ul id="userList"></ul>
+    <tbody>
+        <tr th:each="usersModel : ${users}">
+            <td th:text="${usersModel.id}"></td>
+            <td th:text="${usersModel.login}"></td>
+            <td th:text="${usersModel.password}"></td>
+        </tr>
+    </tbody>
+<ul id="userList"></ul>
+
+</body>
+</html>
+
+</body>
+</html>
