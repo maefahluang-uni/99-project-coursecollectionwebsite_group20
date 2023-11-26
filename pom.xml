@@ -29,7 +29,13 @@
       </dependencies>
     </dependencyManagement>
 
-    <dependencies>  <!-- เปิด-->
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+  <!-- เปิด-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
