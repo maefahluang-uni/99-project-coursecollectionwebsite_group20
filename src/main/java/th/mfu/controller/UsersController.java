@@ -166,6 +166,159 @@ public class UsersController {
         } else {
             return "error_page";
         }
+          // =====================================================
+      @GetMapping("/c")
+    public String Showc(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/C.html";
+    }
+      @GetMapping("/cad")
+    public String Showcad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/C ad.html";
+    }
+      @GetMapping("/cb")
+    public String Showcb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/C be.html";
+    }
+      @GetMapping("/ci")
+    public String Showci(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/C int.html";
+    }
+    //===============================
+          @GetMapping("/c+")
+    public String Showc+(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/c++.html";
+    }
+      @GetMapping("/c+b")
+    public String Showc+b(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/c++ be.html";
+    }
+      @GetMapping("/c+i")
+    public String Showc+i(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/c++ int.html";
+    }
+      @GetMapping("/c+ad")
+    public String Showc+ad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/c++ ad.html";
+    }
+    //===============================
+        //===============================
+          @GetMapping("/cช")
+    public String Showcช(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ.html";
+    }
+      @GetMapping("/cชb")
+    public String Showcชb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ be.html";
+    }
+      @GetMapping("/cชi")
+    public String Showcชi(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ int.html";
+    }
+      @GetMapping("/cชad")
+    public String Showcชad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ ad.html";
+    }
+    //===============================
+            //===============================
+          @GetMapping("/cs")
+    public String Showcs(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Css.html";
+    }
+          @GetMapping("/csb")
+    public String Showcsb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Css be.html";
+    }
+          @GetMapping("/csi")
+    public String Showcsi(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Css int.html";
+    }
+          @GetMapping("/csad")
+    public String Showcsad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Css ad.html";
+    }
+    //===============================
+            //===============================
+          @GetMapping("/cช")
+    public String Showcช(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ.html";
+    }
+      @GetMapping("/cชb")
+    public String Showcชb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ be.html";
+    }
+      @GetMapping("/cชi")
+    public String Showcชi(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ int.html";
+    }
+      @GetMapping("/cชad")
+    public String Showcชad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Cชาบ ad.html";
+    }
+    //===============================
+            //===============================
+          @GetMapping("/data")
+    public String Showdata(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Data sci.html";
+    }
+          @GetMapping("/datab")
+    public String Showdatab(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Data sci be.html";
+    }
+          @GetMapping("/datai")
+    public String Showdatai(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Data sci int.html";
+    }
+          @GetMapping("/dataad")
+    public String Showdataad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/Data sci ad.html";
+    }
+    //===============================
+                //===============================
+          @GetMapping("/html")
+    public String Showhtml(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/HTML.html";
+    }
+          @GetMapping("/htmlb")
+    public String Showhtmlb(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/HTML be.html";
+    }
+          @GetMapping("/htmli")
+    public String Showhtmli(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/HTML int.html";
+    }
+          @GetMapping("/htmlad")
+    public String Showhtmlad(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "/รวม/HTML ad.html";
+    }
+    //===============================
     }
 
 }
