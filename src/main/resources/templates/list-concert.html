@@ -6,7 +6,8 @@
     <title>Employee List</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body> 
+    
     <h1 class="mt-5 mb-4">Q&A Board</h1>
     <a class="btn btn-primary" href="/add-board/">Add Post</a>
     <table class="table table-striped">
@@ -23,7 +24,7 @@
                 <td th:text="${concert.performer.name}"><a th:href="@{/board/{id}/chat(id=${concert.id})}"></a></a></td>
                 <td>
                     <a class="btn btn-danger" th:href="@{/delete-board/{id}(id=${concert.id})}">Delete</a>
-                    <a class="btn btn-primary" th:href="@{/board/{id}/chat(id=${concert.id})}">Go chat</a>
+                    <a class="btn btn-primary" th:href="@{/board/{id}/chat(id=${concert.id})}">Go cahr</a>
                 </td>
             </tr>
         </tbody>
