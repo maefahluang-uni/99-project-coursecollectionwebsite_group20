@@ -118,25 +118,25 @@ public class UsersController {
     @GetMapping("/sql")
     public String Showsql(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
-        return "/รวม/mysql/mysql";
+        return "/รวม/my sql/My SQL";
     }
 
     @GetMapping("/sqlb")
     public String Showsqlb(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
-        return "/รวม/mysql/mysql be";
+        return "/รวม/my sql/My SQL be";
     }
 
     @GetMapping("/sqli")
     public String Showsqli(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
-        return "/รวม/mysql/mysql int";
+        return "/รวม/my sql/My SQL int";
     }
 
     @GetMapping("/sqlad")
     public String Showsqlad(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
-        return "/รวม/mysql/mysql ad";
+        return "/รวม/my sql/My SQL ad";
     }
 
     // ===============================
@@ -293,6 +293,11 @@ public class UsersController {
         model.addAttribute("loginRequest", new UsersModel());
         return "/รวม/data sci/Data sci ad";
     }
+    @GetMapping("/home")
+    public String Showlogout(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "logout";
+    }
 
     // ===============================
     // ===============================
@@ -302,19 +307,19 @@ public class UsersController {
         return "/รวม/html/HTML";
     }
 
-    @GetMapping("/html/HTMLb")
+    @GetMapping("/htmlb")
     public String Showhtmlb(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
         return "/รวม/html/HTML be";
     }
 
-    @GetMapping("/html/HTMLi")
+    @GetMapping("/htmli")
     public String Showhtmli(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
         return "/รวม/html/HTML int";
     }
 
-    @GetMapping("/html/HTMLad")
+    @GetMapping("/htmlad")
     public String Showhtmlad(Model model) {
         model.addAttribute("loginRequest", new UsersModel());
         return "/รวม/html/HTML ad";

@@ -24,10 +24,11 @@
                 <td th:text="${concert.performer.name}"><a th:href="@{/board/{id}/chat(id=${concert.id})}"></a></a></td>
                 <td>
                     <a class="btn btn-danger" th:href="@{/delete-board/{id}(id=${concert.id})}">Delete</a>
-                    <a class="btn btn-primary" th:href="@{/board/{id}/chat(id=${concert.id})}">Go cahr</a>
+                    <a class="btn btn-primary" th:href="@{/board/{id}/chat(id=${concert.id})}">Go chat</a>
                 </td>
             </tr>
         </tbody>
     </table>
+    <button><a href="/home">Home</a></button>
 </body>
 </html>
